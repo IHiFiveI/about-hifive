@@ -1,25 +1,27 @@
-import Marquee from "react-fast-marquee";
-import { GREETINGS } from "../lib/greetings";
-import { AboutMeCard } from "./about-me-card";
-import { ModeToggle } from "@/ui/mode-toggle";
+import Marquee from 'react-fast-marquee';
+import { GREETINGS } from '../lib/greetings';
+import { AboutMeCard } from './about-me-card';
+import { SiteReasoningCollapse } from './site-reasoning-collapse';
+import { Anchor } from '@/ui/anchor';
 
 export const Home = () => {
   return (
     <>
-      <Marquee className="scroll-m-20 text-primary overflow-hidden text-center font-extrabold tracking-tight text-balance text-4xl  flex gap-4 [&_.rfm-child]:pr-4">
+      <Marquee className="text-primary flex scroll-m-20 gap-4 overflow-hidden text-balance text-center text-4xl font-extrabold tracking-tight [&_.rfm-child]:pr-4">
         {GREETINGS}
       </Marquee>
       <div className="flex flex-col gap-8 p-8">
+        <SiteReasoningCollapse />
         <AboutMeCard />
-        <div className="flex gap-4">
-          You can switch the theme at any time:
-          <ModeToggle />
-        </div>
         <span>
-          The theme was taken from:{" "}
-          <a href="https://tweakcn.com/" className="underline text-primary">
+          The theme was taken from:{' '}
+          <Anchor
+            target="_blank"
+            href="https://tweakcn.com/"
+            className="text-primary underline"
+          >
             https://tweakcn.com/
-          </a>
+          </Anchor>
         </span>
       </div>
     </>

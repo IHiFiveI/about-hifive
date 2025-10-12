@@ -1,9 +1,13 @@
-import type { PropsWithChildren } from "react";
+import { Navbar } from './navbar';
+import { Outlet } from 'react-router';
 
-export const Layout = ({ children }: PropsWithChildren) => {
+export const Layout = () => {
   return (
-    <div className="w-[min(100%,_1080px)] h-full flex flex-col m-auto">
-      <div>{children}</div>
+    <div className="m-auto flex h-full w-[min(100%,_1080px)] flex-col gap-4">
+      <Navbar />
+      <div>
+        <Outlet />
+      </div>
     </div>
   );
 };

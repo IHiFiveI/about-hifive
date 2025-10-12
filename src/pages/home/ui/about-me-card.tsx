@@ -1,20 +1,10 @@
-import {
-  Card,
-  CardAction,
-  CardContent,
-  CardHeader,
-  CardTitle,
-} from "@/ui/card";
-import { AboutReadmeTooltip } from "./about-readme-tooltip";
+import { Card, CardContent, CardHeader, CardTitle } from '@/ui/card';
 
 export const AboutMeCard = () => {
   return (
     <Card className="bg-secondary text-secondary-foreground">
       <CardHeader>
-        <CardTitle>Whoami</CardTitle>
-        <CardAction>
-          <AboutReadmeTooltip />
-        </CardAction>
+        <CardTitle>So who am i?</CardTitle>
       </CardHeader>
       <CardContent>
         <p>
