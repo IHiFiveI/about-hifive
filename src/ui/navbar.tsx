@@ -6,6 +6,7 @@ import {
 } from './navigation-menu';
 import { LanguageSelector } from './language-selector';
 import { ROUTES } from '@/lib/routes';
+import { Link } from 'react-router';
 
 export const Navbar = () => {
   return (
@@ -13,10 +14,10 @@ export const Navbar = () => {
       <span className="sm:mr-auto">_HiFive</span>
       <NavigationMenuList className="gap-4 sm:mr-16">
         <NavigationMenuLink asChild>
-          <a href={ROUTES.home}>Home</a>
+          <Link to={ROUTES.home}>Home</Link>
         </NavigationMenuLink>
         <NavigationMenuLink asChild>
-          <a href={ROUTES.skills}>Skills</a>
+          <Link to={ROUTES.skills}>Skills</Link>
         </NavigationMenuLink>
       </NavigationMenuList>
       <div className="flex gap-4">
