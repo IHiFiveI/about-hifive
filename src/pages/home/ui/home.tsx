@@ -1,6 +1,7 @@
 import Marquee from 'react-fast-marquee';
 import { GREETINGS } from '../lib/greetings';
 import { AboutMeCard } from './about-me-card';
+import { SiteReasoningCollapse } from './site-reasoning-collapse';
 
 export const Home = () => {
   return (
@@ -9,6 +10,7 @@ export const Home = () => {
         {GREETINGS}
       </Marquee>
       <div className="flex flex-col gap-8 p-8">
+        <SiteReasoningCollapse />
         <AboutMeCard />
         <span>
           The theme was taken from:{' '}

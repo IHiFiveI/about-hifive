@@ -9,7 +9,8 @@ export function LanguageSelector() {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button variant="outline" size="icon">
+        {/* TODO: Add language switching capabilities */}
+        <Button disabled variant="outline" size="icon">
           {navigator.language.split('-').at(0)?.toLocaleUpperCase()}
           <span className="sr-only">Select language</span>
         </Button>
