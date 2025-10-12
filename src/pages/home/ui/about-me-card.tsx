@@ -4,8 +4,8 @@ import {
   CardContent,
   CardHeader,
   CardTitle,
-} from "@/ui/card";
-import { AboutReadmeTooltip } from "./about-readme-tooltip";
+} from '@/ui/card';
+import { AboutReadmeTooltip } from './about-readme-tooltip';
 
 export const AboutMeCard = () => {
   return (

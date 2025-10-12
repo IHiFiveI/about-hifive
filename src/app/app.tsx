@@ -1,6 +1,6 @@
-import { Home } from "@/pages/home";
-import { Layout } from "@/ui/layout";
-import { ThemeProvider } from "@/ui/theme-provider";
+import { Home } from '@/pages/home';
+import { Layout } from '@/ui/layout';
+import { ThemeProvider } from '@/ui/theme-provider';
 
 export const App = () => {
   return (

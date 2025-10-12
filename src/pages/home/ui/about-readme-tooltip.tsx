@@ -1,5 +1,5 @@
-import { Tooltip, TooltipContent, TooltipTrigger } from "@/ui/tooltip";
-import { Info } from "lucide-react";
+import { Tooltip, TooltipContent, TooltipTrigger } from '@/ui/tooltip';
+import { Info } from 'lucide-react';
 
 export const AboutReadmeTooltip = () => {
   return (
