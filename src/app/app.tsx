@@ -1,13 +1,11 @@
-import { Home } from '@/pages/home';
-import { Layout } from '@/ui/layout';
 import { ThemeProvider } from '@/ui/theme-provider';
+import { RouterProvider } from 'react-router/dom';
+import { router } from './router';
 
 export const App = () => {
   return (
     <ThemeProvider defaultTheme="dark">
-      <Layout>
-        <Home />
-      </Layout>
+      <RouterProvider router={router} />
     </ThemeProvider>
   );
 };

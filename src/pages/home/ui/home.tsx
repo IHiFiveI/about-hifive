@@ -2,6 +2,7 @@ import Marquee from 'react-fast-marquee';
 import { GREETINGS } from '../lib/greetings';
 import { AboutMeCard } from './about-me-card';
 import { SiteReasoningCollapse } from './site-reasoning-collapse';
+import { Anchor } from '@/ui/anchor';
 
 export const Home = () => {
   return (
@@ -14,9 +15,13 @@ export const Home = () => {
         <AboutMeCard />
         <span>
           The theme was taken from:{' '}
-          <a href="https://tweakcn.com/" className="text-primary underline">
+          <Anchor
+            target="_blank"
+            href="https://tweakcn.com/"
+            className="text-primary underline"
+          >
             https://tweakcn.com/
-          </a>
+          </Anchor>
         </span>
       </div>
     </>

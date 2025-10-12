@@ -5,6 +5,7 @@ import {
   NavigationMenuList,
 } from './navigation-menu';
 import { LanguageSelector } from './language-selector';
+import { ROUTES } from '@/lib/routes';
 
 export const Navbar = () => {
   return (
@@ -12,10 +13,10 @@ export const Navbar = () => {
       <span className="sm:mr-auto">_HiFive</span>
       <NavigationMenuList className="gap-4 sm:mr-16">
         <NavigationMenuLink asChild>
-          <a href="/home">Home</a>
+          <a href={ROUTES.home}>Home</a>
         </NavigationMenuLink>
         <NavigationMenuLink asChild>
-          <a href="/skills">Skills</a>
+          <a href={ROUTES.skills}>Skills</a>
         </NavigationMenuLink>
       </NavigationMenuList>
       <div className="flex gap-4">
