@@ -1,5 +1,6 @@
 import { ROUTES } from '@/lib/routes';
 import { Home } from '@/pages/home';
+import { NotFound } from '@/pages/not-found';
 import { Skills } from '@/pages/skills';
 import { Layout } from '@/ui/layout';
 import { createBrowserRouter, Navigate } from 'react-router';
@@ -19,7 +20,7 @@ export const router = createBrowserRouter([
       },
       {
         path: '*',
-        element: <>not found 404</>,
+        element: <NotFound />,
       },
     ],
   },
