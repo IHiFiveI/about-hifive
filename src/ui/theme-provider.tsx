@@ -21,6 +21,31 @@ const initialState: ThemeProviderState = {
 export const ThemeProviderContext =
   createContext<ThemeProviderState>(initialState);
 
+const updateTheme = (themeClassName: Exclude<Theme, 'system'>) => {
+  const root = window.document.documentElement;
+  root.classList.remove('light', 'dark');
+  root.classList.add(themeClassName);
+
+  const faviconList = window.document.querySelectorAll('link[data-favicon]');
+
+  for (const favicon of faviconList) {
+    const currentHref = favicon.getAttribute('href');
+
+    if (!currentHref) {
+      continue;
+    }
+
+    const temporaryThemeString = '!';
+
+    const newHref = currentHref
+      .replaceAll('light', temporaryThemeString)
+      .replaceAll('dark', temporaryThemeString)
+      .replaceAll(temporaryThemeString, themeClassName);
+
+    favicon.setAttribute('href', newHref);
+  }
+};
+
 export function ThemeProvider({
   children,
   defaultTheme = 'system',
@@ -32,31 +57,27 @@ export function ThemeProvider({
   );
 
   useEffect(() => {
-    const root = window.document.documentElement;
-
-    root.classList.remove('light', 'dark');
-
     if (theme === 'system') {
       const colorSchemeMedia = window.matchMedia(
         '(prefers-color-scheme: dark)'
       );
 
-      const onChange = () => {
-        root.classList.remove('light', 'dark');
-
+      const handleThemeUpdate = () => {
         const systemTheme = colorSchemeMedia.matches ? 'dark' : 'light';
 
-        root.classList.add(systemTheme);
+        updateTheme(systemTheme);
       };
 
-      colorSchemeMedia.addEventListener('change', onChange);
+      colorSchemeMedia.addEventListener('change', handleThemeUpdate);
+
+      handleThemeUpdate();
 
       return () => {
-        colorSchemeMedia.removeEventListener('change', onChange);
+        colorSchemeMedia.removeEventListener('change', handleThemeUpdate);
       };
     }
 
-    root.classList.add(theme);
+    updateTheme(theme);
   }, [theme]);
 
   const value = {
