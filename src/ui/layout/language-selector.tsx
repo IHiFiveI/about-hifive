@@ -1,9 +1,9 @@
-import { Button } from './button';
+import { Button } from '../button';
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuTrigger,
-} from './dropdown-menu';
+} from '../dropdown-menu';
 
 export function LanguageSelector() {
   return (
