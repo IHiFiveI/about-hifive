@@ -6,7 +6,7 @@ import { RestrictedWidthWrapper } from './restricted-width-wrapper';
 export const Layout = () => {
   return (
     <div className="flex h-full flex-col justify-between">
-      <RestrictedWidthWrapper>
+      <RestrictedWidthWrapper className="pb-32">
         <Navbar />
         <div className="size-full min-h-[720px]">
           <Outlet />
