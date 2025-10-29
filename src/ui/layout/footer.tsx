@@ -1,6 +1,7 @@
 import { RestrictedWidthWrapper } from './restricted-width-wrapper';
 import { Github } from '../icons/github';
 import { HeadHunter } from '../icons/head-hunter';
+import { LinkedIn } from '../icons/linkedin';
 
 export const Footer = () => {
   return (
@@ -18,12 +19,15 @@ export const Footer = () => {
             </a>
           </li>
           <li>
+            <HeadHunter className="size-8" />
+          </li>
+          <li>
             <a
-              title="HeadHunter"
+              title="LinkedIn"
               target="_blank"
-              href="https://novosibirsk.hh.ru/resume/79eb7b49ff0f8343700039ed1f507759633542"
+              href="https://www.linkedin.com/in/npanin5"
             >
-              <HeadHunter className="size-8" />
+              <LinkedIn className="scale-98 size-8" />
             </a>
           </li>
         </ul>
