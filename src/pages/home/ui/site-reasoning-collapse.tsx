@@ -10,8 +10,8 @@ export const SiteReasoningCollapse = () => {
   return (
     <Collapsible className="bg-accent text-card-foreground flex flex-col rounded-xl border shadow-sm">
       <CollapsibleTrigger className="group flex w-full items-center justify-between p-6 py-3">
-        <h3 className="flex items-center gap-2 text-left text-sm font-semibold">
-          i actually wasn't planning on doing the site{' '}
+        <h3 className="mr-4 flex items-center text-left text-sm font-semibold">
+          btw, i wasn't planning on creating the site in the first place
         </h3>
         <span className="text-muted-foreground ml-auto font-thin">why?</span>
         <ChevronDown className="text-muted-foreground h-4 w-4 transition-transform group-data-[state=open]:rotate-180" />

@@ -1,12 +1,12 @@
 import { ModeToggle } from '@/ui/mode-toggle';
+import { ROUTES } from '@/lib/routes';
+import { Link } from 'react-router';
 import {
   NavigationMenu,
   NavigationMenuLink,
   NavigationMenuList,
-} from './navigation-menu';
+} from '../navigation-menu';
 import { LanguageSelector } from './language-selector';
-import { ROUTES } from '@/lib/routes';
-import { Link } from 'react-router';
 
 export const Navbar = () => {
   return (
