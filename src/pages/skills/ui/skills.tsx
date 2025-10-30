@@ -65,7 +65,11 @@ export const Skills = () => {
           title="Backend"
           skillNames={['Nest.js', 'Koa', 'Express']}
         />
-        <SkillGridCell title="Firebase!" skillNames={['Firebase']} />
+        <SkillGridCell
+          title="Firebase!"
+          skillNames={['Firebase']}
+          className="col-span-1 sm:col-span-2 md:col-span-1"
+        />
       </div>
     </article>
   );

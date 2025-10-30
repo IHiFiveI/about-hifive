@@ -3,11 +3,16 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/ui/card';
 interface SkillGridCellProps {
   title: string;
   skillNames: string[];
+  className?: HTMLDivElement['className'];
 }
 
-export const SkillGridCell = ({ title, skillNames }: SkillGridCellProps) => {
+export const SkillGridCell = ({
+  title,
+  skillNames,
+  className,
+}: SkillGridCellProps) => {
   return (
-    <Card>
+    <Card className={className}>
       <CardHeader>
         <CardTitle>
           <h3 className="my-4 text-3xl">{title}</h3>
