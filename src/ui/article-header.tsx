@@ -14,7 +14,7 @@ export const ArticleHeader = ({
   return (
     <div
       className={clsx(
-        'mb-4 mt-16 flex flex-wrap justify-between sm:flex-nowrap',
+        'mb-4 flex flex-wrap justify-between sm:flex-nowrap',
         className
       )}
     >

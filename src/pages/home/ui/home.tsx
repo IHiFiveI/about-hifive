@@ -7,7 +7,7 @@ export const Home = () => {
   return (
     <>
       <Greetings />
-      <article className="p-8">
+      <article className="mt-16 p-8 pt-4">
         <ArticleHeader
           title={'Greetings!! My name is Nikíta.'}
           time={'2025-10-29'}
