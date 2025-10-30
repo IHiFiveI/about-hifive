@@ -1,4 +1,4 @@
-import { Outlet } from 'react-router';
+import { Outlet, ScrollRestoration } from 'react-router';
 import { Footer } from './footer';
 import { Navbar } from './navbar';
 import { RestrictedWidthWrapper } from './restricted-width-wrapper';
@@ -13,6 +13,8 @@ export const Layout = () => {
         </div>
       </RestrictedWidthWrapper>
       <Footer />
+
+      <ScrollRestoration />
     </div>
   );
 };
