@@ -1,10 +1,6 @@
 export const AboutMeSection = () => {
   return (
     <section>
-      <div className="mb-4 mt-16 flex flex-wrap justify-between sm:flex-nowrap">
-        <h2 className="text-4xl">Greetings!! My name is Nikíta.</h2>
-        <time className="text-accent-foreground/60 self-end">29.10.2025</time>
-      </div>
       <p className="text-xl">
         Im a React frontend developer with 4+ years of experience.
         <br />
