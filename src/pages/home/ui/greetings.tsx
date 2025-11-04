@@ -13,7 +13,13 @@ export const Greetings = () => {
 
   return (
     <div data-key="marquee-wrapper" ref={marqueeWrapperRef}>
-      <Marquee className="text-primary flex scroll-m-20 gap-4 overflow-hidden text-balance text-center text-4xl font-extrabold tracking-tight [&_.rfm-child]:pr-4">
+      <Marquee
+        // TODO: Make gradientColor work for both light and dark themes
+        // gradient
+        // gradientWidth={100}
+        // gradientColor={'#121113'}
+        className="text-primary flex scroll-m-20 gap-4 overflow-hidden text-balance text-center text-4xl font-extrabold tracking-tight [&_.rfm-child]:pr-4"
+      >
         {GREETINGS}
       </Marquee>
     </div>
