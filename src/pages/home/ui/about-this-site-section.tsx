@@ -6,8 +6,7 @@ export const AboutThisSiteSection = () => {
     <section>
       <h2 className="my-4 text-4xl">About this site</h2>
       <aside className="my-8 w-[min(100%,_32rem)] border-l-2 pl-4">
-        {/* TODO: Maybe try searching a proper cite for it */}
-        <blockquote cite="idk">
+        <blockquote cite="https://en.wikipedia.org/wiki/Hagakure">
           <p>“A samurai has no goal — only a path”</p>
         </blockquote>
         and my path is to use the resources of a multi-million dollar
@@ -34,6 +33,10 @@ export const AboutThisSiteSection = () => {
         </li>
       </ul>
       {/* TODO: State what am I planning to do with this site (maybe turn it into a blog) */}
+      <h3 className="my-4 text-3xl">Future plans</h3>
+      <p>
+        while right now the site is just a demo, i plan to turn it into a blog
+      </p>
     </section>
   );
 };
