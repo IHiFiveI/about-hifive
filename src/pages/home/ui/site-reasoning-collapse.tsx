@@ -24,10 +24,8 @@ export const SiteReasoningCollapse = () => {
       <CollapsibleContent className="p-6 py-3 pt-0">
         <Separator className="bg-muted-foreground mb-3" />
         <aside>
-          {/* FIXME: RU translation for this key needs to be created in order to allow this MR to be merged */}
           <p>{t('siteReasoning.iveNeverThoughtAboutCustomization')}</p>
           <br />
-          {/* FIXME: RU translation for this key needs to be created in order to allow this MR to be merged */}
           <p>{t('siteReasoning.andOnlyAfterThat')}</p>
           <br />
           😭😭😭
