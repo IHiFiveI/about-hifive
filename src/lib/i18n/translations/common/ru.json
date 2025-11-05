@@ -8,5 +8,10 @@
   "navigationMenuItems": {
     "home": "Главная",
     "skills": "Навыки"
+  },
+  "footer": {
+    "copyright": "© 2025 - н.в.",
+    "ifYouReallyInterested": "если вам правда интересно, для получения моего резюме свяжитесь со мной в linkedin или по почте:",
+    "thanks": "спасибо!"
   }
 }

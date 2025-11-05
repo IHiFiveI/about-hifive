@@ -8,5 +8,10 @@
   "navigationMenuItems": {
     "home": "Home",
     "skills": "Skills"
+  },
+  "footer": {
+    "copyright": "© 2025 - present",
+    "ifYouReallyInterested": "if you really are interested in my resume, contact me on linkedin or via email:",
+    "thanks": "thanks!"
   }
 }
