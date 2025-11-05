@@ -11,7 +11,7 @@ export const Home = () => {
     <>
       <Greetings />
       <article className="mt-16 p-8 pt-4">
-        <ArticleHeader title={t('greetingsMyNameIs')} time={'2025-10-29'} />
+        <ArticleHeader title={t('greetingsMyNameIs')} time={'2025-11-06'} />
         <div className="flex flex-col gap-8">
           <AboutMeSection />
           <AboutThisSiteSection />
