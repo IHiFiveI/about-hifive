@@ -30,7 +30,7 @@ export const LanguageSelector = () => {
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
         <Button variant="outline" size="icon">
-          {selectedLanguage}
+          {selectedLanguage.toLocaleUpperCase()}
           <span className="sr-only">{t('languages.languageSelect')}</span>
         </Button>
       </DropdownMenuTrigger>
