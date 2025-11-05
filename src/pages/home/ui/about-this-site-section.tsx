@@ -39,7 +39,6 @@ export const AboutThisSiteSection = () => {
           )
         </li>
       </ul>
-      {/* TODO: State what am I planning to do with this site (maybe turn it into a blog) */}
       <h3 className="my-4 text-3xl">{t('futurePlans.futurePlans')}</h3>
       <p>{t('futurePlans.iPlanToTurnItInto')}</p>
     </section>
