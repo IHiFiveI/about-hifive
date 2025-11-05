@@ -1,0 +1,28 @@
+{
+  "greetingsMyNameIs": "Greetings!! My name is Nikíta.",
+  "aboutMeSection": {
+    "imADeveloper": "Im a React frontend developer with 4+ years of experience.",
+    "iStriveToWrite": "I strive to write clean, maintainable code and build user-friendly interfaces that solve real problems."
+  },
+  "aboutThisSiteSection": {
+    "aboutThisSite": "About this site",
+    "samuraiHasNoGoal": "“A samurai has no goal — only a path”",
+    "myPathIsToUseCorporation": "and my path is to use the resources of a multi-million dollar corporation to host something",
+    "aDisposableVapeCouldHandle": "a disposable vape could handle"
+  },
+  "siteReasoning": {
+    "iWasntPlanningOnDoingIt": "btw, i wasn't planning on creating the site in the first place",
+    "why": "why?",
+    "iveNeverThoughtAboutCustomization": "i've never thought about how people customize their github profiles until i've tried a \"profile generator\" myself and realized the widgets they create are just hosted on vercel so i went and did all this myself",
+    "andOnlyAfterThat": "aaand only after my first deploy i realized all the stuff that i've seen hosted on vercel is literally just svg images and there's no way github allowing users to embed iframes on their profiles",
+    "kindaShouldveKnown": "kinda should've known"
+  },
+  "usedTechnologies": {
+    "usedTechnologies": "Used technologies",
+    "theThemeWasTakenFrom": "the theme was taken from"
+  },
+  "futurePlans": {
+    "futurePlans": "Future plans",
+    "iPlanToTurnItInto": "For now, this site will serve as a business card with the info about me and my skills, but in the future I would be happy to turn it into a personal blog with articles on web development."
+  }
+}

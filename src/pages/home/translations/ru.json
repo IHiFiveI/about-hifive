@@ -1,0 +1,28 @@
+{
+  "greetingsMyNameIs": "Привет!! Меня зовут Ники́та.",
+  "aboutMeSection": {
+    "imADeveloper": "Я React-разработчик с 4+ летним опытом.",
+    "iStriveToWrite": "Я стремлюсь писать чистый, удобный для поддержки код и создавать удобные для пользователя интерфейсы, которые решают реальные проблемы."
+  },
+  "aboutThisSiteSection": {
+    "aboutThisSite": "О сайте",
+    "samuraiHasNoGoal": "“У самурая нет цели, есть только путь”",
+    "myPathIsToUseCorporation": "и мой путь это использовать ресурсы многомиллионной корпорации для хостинга того с чем",
+    "aDisposableVapeCouldHandle": "может справиться одноразовый вейп"
+  },
+  "siteReasoning": {
+    "iWasntPlanningOnDoingIt": "я, кстати, не планировал создавать сайт изначально",
+    "why": "почему?",
+    "iveNeverThoughtAboutCustomization": "[ПЕРЕВОД НЕДОСТУПЕН]",
+    "andOnlyAfterThat": "[ПЕРЕВОД НЕДОСТУПЕН]",
+    "kindaShouldveKnown": "так-то мог и догадаться"
+  },
+  "usedTechnologies": {
+    "usedTechnologies": "Используемые технологии",
+    "theThemeWasTakenFrom": "тема была позаимствована с"
+  },
+  "futurePlans": {
+    "futurePlans": "Планы на будущее",
+    "iPlanToTurnItInto": "Пока этот сайт будет выполнять функцию визитки, рассказывающей обо мне и о моих навыках, но в будущем я был бы рад превратить его в личный блог с тематическими статьями по веб-разработке."
+  }
+}

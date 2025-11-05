@@ -1,6 +1,7 @@
 import { ThemeProvider } from '@/ui/theme-provider';
 import { RouterProvider } from 'react-router/dom';
 import { router } from './router';
+import './locales';
 
 export const App = () => {
   return (

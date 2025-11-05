@@ -1,42 +1,47 @@
 import { Anchor } from '@/ui/anchor';
 import { SiteReasoningCollapse } from './site-reasoning-collapse';
+import { useTranslation } from 'react-i18next';
 
 export const AboutThisSiteSection = () => {
+  const { t } = useTranslation('home');
+
   return (
     <section>
-      <h2 className="my-4 text-4xl">About this site</h2>
+      <h2 className="my-4 text-4xl">
+        {t('aboutThisSiteSection.aboutThisSite')}
+      </h2>
       <aside className="my-8 w-[min(100%,_32rem)] border-l-2 pl-4">
         <blockquote cite="https://en.wikipedia.org/wiki/Hagakure">
-          <p>“A samurai has no goal — only a path”</p>
+          <p>{t('aboutThisSiteSection.samuraiHasNoGoal')}</p>
         </blockquote>
-        and my path is to use the resources of a multi-million dollar
-        corporation to host something{' '}
+        {t('aboutThisSiteSection.myPathIsToUseCorporation')}{' '}
         <Anchor
           target="_blank"
           href="https://bogdanthegeek.github.io/blog/projects/vapeserver/"
         >
-          a disposable vape could handle
+          {t('aboutThisSiteSection.aDisposableVapeCouldHandle')}
         </Anchor>
         .
       </aside>
       <SiteReasoningCollapse />
-      <h3 className="my-4 text-3xl">Used technologies</h3>
+      <h3 className="my-4 text-3xl">
+        {t('usedTechnologies.usedTechnologies')}
+      </h3>
       <ul className="[&_li]:list-inside [&_li]:list-disc">
-        <li>React</li>
         <li>Typescript</li>
-        <li>tailwindcss</li>
+        <li>React</li>
+        <li>Firebase</li>
         <li>
-          The theme was taken from:{' '}
+          TailwindCSS ({t('usedTechnologies.theThemeWasTakenFrom')}:{' '}
           <Anchor target="_blank" href="https://tweakcn.com/">
             https://tweakcn.com/
           </Anchor>
+          )
         </li>
       </ul>
       {/* TODO: State what am I planning to do with this site (maybe turn it into a blog) */}
-      <h3 className="my-4 text-3xl">Future plans</h3>
-      <p>
-        while right now the site is just a demo, i plan to turn it into a blog
-      </p>
+      <h3 className="my-4 text-3xl">{t('futurePlans.futurePlans')}</h3>
+      <p>{t('futurePlans.iPlanToTurnItInto')}</p>
     </section>
   );
 };

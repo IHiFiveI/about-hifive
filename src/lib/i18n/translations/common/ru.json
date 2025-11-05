@@ -1,0 +1,12 @@
+{
+  "languages": {
+    "languageSelect": "Выбор языка",
+    "english": "English",
+    "russian": "Русский",
+    "german": "Deutsch"
+  },
+  "navigationMenuItems": {
+    "home": "Главная",
+    "skills": "Навыки"
+  }
+}

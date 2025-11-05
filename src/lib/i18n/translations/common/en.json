@@ -1,0 +1,12 @@
+{
+  "languages": {
+    "languageSelect": "Language select",
+    "english": "English",
+    "russian": "Русский",
+    "german": "Deutsch"
+  },
+  "navigationMenuItems": {
+    "home": "Home",
+    "skills": "Skills"
+  }
+}
