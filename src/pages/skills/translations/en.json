@@ -1,0 +1,20 @@
+{
+  "myStack": "My stack",
+  "currentStateInfo": {
+    "warning": "WARNING!",
+    "informationAboutThePage": "information regarding the current state of the page",
+    "thisPageIsIncomplete": "This page is very incomplete.",
+    "iWillComeUpWithSomething": "i don't really have time to do anything fancy yet, but eventually i will come up with something (for now, plain boring bullet lists will suffice)",
+    "stayTuned": "stay tuned!"
+  },
+  "stackLabels": {
+    "librariesAndFrameworks": "Libraries & Frameworks",
+    "styles": "Styles",
+    "stateManagement": "State management",
+    "requestHandling": "Request handling",
+    "tests": "Tests",
+    "architecture": "Architecture",
+    "backend": "Backend",
+    "firebase": "Firebase!"
+  }
+}

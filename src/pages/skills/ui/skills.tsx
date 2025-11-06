@@ -8,65 +8,67 @@ import {
   CardTitle,
 } from '@/ui/card';
 import { SkillGridCell } from './skill-grid-cell';
+import { useTranslation } from 'react-i18next';
 
 export const Skills = () => {
+  const { t } = useTranslation('skills');
+
   return (
     <article className="flex flex-col p-8 pt-4">
       {/* TODO: Look into creating a background image with https://tinkersynth.com/ */}
 
-      <ArticleHeader title={'My stack'} time={'2025-10-30'} />
+      <ArticleHeader title={t('myStack')} time={'2025-11-07'} />
       <Card className="bg-secondary text-secondary-foreground my-16 w-[min(100%,_512px)] self-center">
         <CardHeader>
           <CardTitle>
-            <h3>WARNING!</h3>
+            <h3>{t('currentStateInfo.warning')}</h3>
           </CardTitle>
           <CardDescription className="text-secondary-foreground/60">
-            information regarding the current state of the page
+            {t('currentStateInfo.informationAboutThePage')}
           </CardDescription>
         </CardHeader>
         <CardContent>
-          This page is really incomplete.
+          {t('currentStateInfo.thisPageIsIncomplete')}
           <br />
-          eventually i will come up with something, but for now there will be
-          just boring bullet lists
+          {t('currentStateInfo.iWillComeUpWithSomething')}
         </CardContent>
-        <CardFooter>stay tuned!</CardFooter>
+        <CardFooter>{t('currentStateInfo.stayTuned')}</CardFooter>
       </Card>
 
       {/* TODO: Create a design utilizing grid layout for all the skills */}
 
       <div className="grid grid-cols-1 grid-rows-3 gap-4 sm:grid-cols-2 md:grid-cols-3">
         <SkillGridCell
-          title="Libraries & Frameworks"
+          title={t('stackLabels.librariesAndFrameworks')}
           skillNames={['React', 'Next.js']}
         />
         <SkillGridCell
-          title="Styles"
+          title={t('stackLabels.styles')}
           skillNames={['Tailwind', 'SCSS', 'PostCSS']}
         />
         <SkillGridCell
-          title="State management"
+          title={t('stackLabels.stateManagement')}
           skillNames={['Redux (RTK)', 'MobX']}
         />
         <SkillGridCell
-          title="Request handling"
+          title={t('stackLabels.requestHandling')}
           skillNames={['RTK Query', 'Tanstack Query (React Query)']}
         />
         <SkillGridCell
-          title="Tests"
+          title={t('stackLabels.tests')}
           skillNames={['React Testing Library', 'Jest', 'Vitest']}
         />
         <SkillGridCell
-          title="Architecture"
+          title={t('stackLabels.architecture')}
           skillNames={['Feature-Sliced Design', 'Module', 'Atomic']}
         />
         <SkillGridCell title="Runtimes" skillNames={['Node', 'Bun']} />
         <SkillGridCell
-          title="Backend"
+          title={t('stackLabels.backend')}
           skillNames={['Nest.js', 'Koa', 'Express']}
         />
         <SkillGridCell
-          title="Firebase!"
+          title={t('stackLabels.firebase')}
           skillNames={['Firebase']}
           className="col-span-1 sm:col-span-2 md:col-span-1"
         />
