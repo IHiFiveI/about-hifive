@@ -1,4 +1,6 @@
-import clsx from 'clsx';
+import { formatTimeByLocale } from '@/lib/formatters';
+import { cn } from '@/lib/utils';
+import { useTranslation } from 'react-i18next';
 
 interface ArticleHeaderProps {
   title: string;
@@ -11,9 +13,11 @@ export const ArticleHeader = ({
   time,
   className,
 }: ArticleHeaderProps) => {
+  const { i18n } = useTranslation('home');
+
   return (
     <div
-      className={clsx(
+      className={cn(
         'mb-4 flex flex-wrap justify-between gap-4 sm:flex-nowrap',
         className
       )}
@@ -23,7 +27,7 @@ export const ArticleHeader = ({
         className="text-accent-foreground/60 self-end text-nowrap"
         dateTime={time}
       >
-        {new Date(time).toDateString()}
+        {formatTimeByLocale(time, i18n.language)}
       </time>
     </div>
   );
