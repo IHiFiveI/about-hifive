@@ -1,4 +1,5 @@
 import { useCallback, useState } from 'react';
+import { memo } from 'react';
 import { Button } from '../button';
 import {
   DropdownMenu,
@@ -10,7 +11,7 @@ import {
 import { getSavedLanguage, type Language } from '@/lib/i18n';
 import { useTranslation } from 'react-i18next';
 
-export const LanguageSelector = () => {
+export const LanguageSelector = memo(() => {
   const { t, i18n } = useTranslation('common');
 
   const [selectedLanguage, setSelectedLanguage] = useState<Language>(() =>
@@ -59,4 +60,4 @@ export const LanguageSelector = () => {
       </DropdownMenuContent>
     </DropdownMenu>
   );
-};
+});
