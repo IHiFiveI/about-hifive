@@ -4,6 +4,15 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
+  --breakpoint-2xs: 22rem; /* 352px */
+  --breakpoint-xs: 30rem;
+  /* Default breakpoints are: */
+  /* --breakpoint-sm: 40rem; */
+  /* --breakpoint-md: 48rem; */
+  /* --breakpoint-lg: 64rem; */
+  /* --breakpoint-xl: 80rem; */
+  /* --breakpoint-2xl: 96rem; */
+
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);
