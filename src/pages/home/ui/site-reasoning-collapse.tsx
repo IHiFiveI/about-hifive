@@ -17,7 +17,7 @@ export const SiteReasoningCollapse = () => {
       className="bg-accent text-card-foreground flex flex-col rounded-xl border shadow-sm"
       onClick={() => {
         // TODO: Remove temporary logging
-        console.log('event logged');
+        console.log('analytics instance', analytics?.app?.name);
         logEvent(analytics, 'site_reasoning_opened');
       }}
     >
