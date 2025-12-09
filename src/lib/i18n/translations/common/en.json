@@ -1,0 +1,21 @@
+{
+  "languages": {
+    "languageSelect": "Language select",
+    "english": "English",
+    "russian": "Русский",
+    "german": "Deutsch"
+  },
+  "navigationMenuItems": {
+    "home": "Home",
+    "skills": "Skills"
+  },
+  "404": {
+    "thePageNoLongerThere": "the page you trying to access is no longer there.",
+    "movedOrWasntPresent": "its either moved, or wasn't present at all"
+  },
+  "footer": {
+    "copyright": "© 2025 - present",
+    "ifYouReallyInterested": "if you really are interested in my resume, contact me on linkedin or via email:",
+    "thanks": "thanks!"
+  }
+}

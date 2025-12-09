@@ -15,7 +15,7 @@ Check it out at:
 > [!WARNING]
 > The project is currently WIP and im only working on it in my free time.
 
-I tried my best to make the experience smooth and easy for anyone interested in information on the cite, so I provided:
+I tried my best to make the experience smooth and easy for anyone interested in information on the site, so I provided:
 
 - Adaptive layouts for convenient mobile viewing
 - Translation for the languages I speak

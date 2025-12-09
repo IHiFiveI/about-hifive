@@ -1,11 +1,14 @@
+import { useTranslation } from 'react-i18next';
+
 export const AboutMeSection = () => {
+  const { t } = useTranslation('home');
+
   return (
     <section>
       <p className="text-xl">
-        Im a React frontend developer with 4+ years of experience.
+        {t('aboutMeSection.imADeveloper')}
         <br />
-        <br />I strive to write clean, maintainable code and build user-friendly
-        interfaces that solve real problems.
+        {t('aboutMeSection.iStriveToWrite')}
       </p>
       {/* TODO: Create grid with info about me: */}
       {/* my hobbies */}

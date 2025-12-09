@@ -1,4 +1,4 @@
-import { createContext, useEffect, useState } from 'react';
+import { createContext, useCallback, useLayoutEffect, useState } from 'react';
 
 type Theme = 'dark' | 'light' | 'system';
 
@@ -56,40 +56,42 @@ export function ThemeProvider({
     () => (localStorage.getItem(storageKey) as Theme) || defaultTheme
   );
 
-  useEffect(() => {
-    if (theme === 'system') {
-      const colorSchemeMedia = window.matchMedia(
-        '(prefers-color-scheme: dark)'
-      );
-
-      const handleThemeUpdate = () => {
-        const systemTheme = colorSchemeMedia.matches ? 'dark' : 'light';
-
-        updateTheme(systemTheme);
-      };
-
-      colorSchemeMedia.addEventListener('change', handleThemeUpdate);
-
-      handleThemeUpdate();
-
-      return () => {
-        colorSchemeMedia.removeEventListener('change', handleThemeUpdate);
-      };
+  useLayoutEffect(() => {
+    if (theme !== 'system') {
+      updateTheme(theme);
+      return;
     }
 
-    updateTheme(theme);
+    const colorSchemeMedia = window.matchMedia('(prefers-color-scheme: dark)');
+
+    const handleThemeUpdate = () => {
+      const systemTheme = colorSchemeMedia.matches ? 'dark' : 'light';
+
+      updateTheme(systemTheme);
+    };
+
+    colorSchemeMedia.addEventListener('change', handleThemeUpdate);
+
+    handleThemeUpdate();
+
+    return () => {
+      colorSchemeMedia.removeEventListener('change', handleThemeUpdate);
+    };
   }, [theme]);
 
-  const value = {
-    theme,
-    setTheme: (theme: Theme) => {
-      localStorage.setItem(storageKey, theme);
-      setTheme(theme);
+  const handleSetTheme = useCallback(
+    (newTheme: Theme) => {
+      localStorage.setItem(storageKey, newTheme);
+      setTheme(newTheme);
     },
-  };
+    [storageKey]
+  );
 
   return (
-    <ThemeProviderContext.Provider {...props} value={value}>
+    <ThemeProviderContext.Provider
+      {...props}
+      value={{ theme, setTheme: handleSetTheme }}
+    >
       {children}
     </ThemeProviderContext.Provider>
   );

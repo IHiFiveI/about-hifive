@@ -5,36 +5,41 @@ import {
 } from '@/ui/collapsible';
 import { ChevronDown } from 'lucide-react';
 import { Separator } from '@/ui/separator';
+import { useTranslation } from 'react-i18next';
+import { analytics } from '@/app/firebase';
+import { logEvent } from 'firebase/analytics';
 
 export const SiteReasoningCollapse = () => {
+  const { t } = useTranslation('home');
+
   return (
-    <Collapsible className="bg-accent text-card-foreground flex flex-col rounded-xl border shadow-sm">
+    <Collapsible
+      className="bg-accent text-card-foreground flex flex-col rounded-xl border shadow-sm"
+      onClick={() => {
+        // TODO: Remove temporary logging
+        console.log('analytics instance', analytics?.app?.name);
+        logEvent(analytics, 'site_reasoning_opened');
+      }}
+    >
       <CollapsibleTrigger className="group flex w-full items-center justify-between p-6 py-3">
         <h3 className="mr-4 flex items-center text-left text-sm font-semibold">
-          btw, i wasn't planning on creating the site in the first place
+          {t('siteReasoning.iWasntPlanningOnDoingIt')}
         </h3>
-        <span className="text-muted-foreground ml-auto font-thin">why?</span>
+        <span className="text-muted-foreground ml-auto font-thin">
+          {t('siteReasoning.why')}
+        </span>
         <ChevronDown className="text-muted-foreground h-4 w-4 transition-transform group-data-[state=open]:rotate-180" />
       </CollapsibleTrigger>
       <CollapsibleContent className="p-6 py-3 pt-0">
         <Separator className="bg-muted-foreground mb-3" />
         <aside>
-          <p>
-            i've never thought about how people customize their github profiles
-            until i've tried a "profile generator" myself and realized the
-            widgets they create are just hosted on vercel so i went and did all
-            this myself
-          </p>
+          <p>{t('siteReasoning.iveNeverThoughtAboutCustomization')}</p>
           <br />
-          <p>
-            aaand only after my first deploy i realized all the stuff that i've
-            seen hosted on vercel is literally just svg images and there's no
-            way github allowing users to embed iframes on their profiles
-          </p>
+          <p>{t('siteReasoning.andOnlyAfterThat')}</p>
           <br />
           😭😭😭
           <br />
-          <span>kinda should've known</span>
+          <span>{t('siteReasoning.kindaShouldveKnown')}</span>
         </aside>
       </CollapsibleContent>
     </Collapsible>

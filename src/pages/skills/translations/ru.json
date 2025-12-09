@@ -1,0 +1,20 @@
+{
+  "myStack": "Мой стек",
+  "currentStateInfo": {
+    "warning": "ВНИМАНИЕ!",
+    "informationAboutThePage": "Информация по текущему состоянию страницы",
+    "thisPageIsIncomplete": "Ничего из представленного здесь не является завершенным.",
+    "iWillComeUpWithSomething": "пока что у меня нет времени реализовывать тут что-то большее, но однажды я обязательно что-нибудь придумаю (пока что, скучных буллет поинтов будет достаточно)",
+    "stayTuned": "ожидайте!"
+  },
+  "stackLabels": {
+    "librariesAndFrameworks": "Библиотеки и фреймворки",
+    "styles": "Стили",
+    "stateManagement": "Стейт приложения",
+    "requestHandling": "Обработка запросов",
+    "tests": "Тестирование",
+    "architecture": "Архитектура",
+    "backend": "Бэкенд",
+    "firebase": "Firebase!"
+  }
+}
