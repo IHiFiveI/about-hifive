@@ -6,12 +6,21 @@ import {
 import { ChevronDown } from 'lucide-react';
 import { Separator } from '@/ui/separator';
 import { useTranslation } from 'react-i18next';
+import { analytics } from '@/app/firebase';
+import { logEvent } from 'firebase/analytics';
 
 export const SiteReasoningCollapse = () => {
   const { t } = useTranslation('home');
 
   return (
-    <Collapsible className="bg-accent text-card-foreground flex flex-col rounded-xl border shadow-sm">
+    <Collapsible
+      className="bg-accent text-card-foreground flex flex-col rounded-xl border shadow-sm"
+      onClick={() => {
+        // TODO: Remove temporary logging
+        console.log('event logged');
+        logEvent(analytics, 'site_reasoning_opened');
+      }}
+    >
       <CollapsibleTrigger className="group flex w-full items-center justify-between p-6 py-3">
         <h3 className="mr-4 flex items-center text-left text-sm font-semibold">
           {t('siteReasoning.iWasntPlanningOnDoingIt')}
